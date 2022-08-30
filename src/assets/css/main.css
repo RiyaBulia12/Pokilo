@@ -1,0 +1,46 @@
+:root {
+  --main-theme-color: #111;
+  --yellow-color: #d8b54f;
+}
+
+* {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: var(--main-theme-color);
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  --bs-gutter-x: 0;
+}
+
+.header {
+  padding: 1.25rem;
+  background-color: var(--yellow-color);
+}
+
+.main-content {
+  width: 70%;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#nav li a {
+  color: var(--main-theme-color);
+}
+
+.footer {
+  padding: 1rem;
+  color: var(--yellow-color);
+}
