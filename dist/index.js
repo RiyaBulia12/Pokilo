@@ -136,7 +136,7 @@ eval("var map = {\n\t\"./1.png\": \"./src/assets/img/1.png\",\n\t\"./10.png\": \
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst baseUrl = 'https://pokeapi.co/api/v2';\n\nconst getPoke = async () => {\n  const getResult = await fetch(`${baseUrl}/pokemon/?offset=20&limit=9`);\n  const json = await getResult.json();\n  return json.results;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({ getPoke });\n\n\n//# sourceURL=webpack://pokemon/./src/assets/js/api.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst baseUrl = 'https://pokeapi.co/api/v2';\n\nconst getPoke = async () => {\n  const getResult = await fetch(`${baseUrl}/pokemon/?offset=20&limit=9`);\n  const json = await getResult.json();\n  return json.results;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getPoke);\n\n\n//# sourceURL=webpack://pokemon/./src/assets/js/api.js?");
 
 /***/ }),
 

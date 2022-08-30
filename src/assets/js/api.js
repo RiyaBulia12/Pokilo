@@ -6,4 +6,4 @@ const getPoke = async () => {
   return json.results;
 };
 
-export default { getPoke };
+export default getPoke;
