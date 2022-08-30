@@ -1,0 +1,33 @@
+* {
+  text-align: center;
+  font-family: 'Comic Neue', cursive, sans-serif;
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #917dd8;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-position: left 16%;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.main-content {
+  width: 70%;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ********************** Begin Table content  ********************* */
