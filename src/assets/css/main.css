@@ -3,7 +3,6 @@
   --yellow-color: #d8b54f;
 }
 
-
 * {
   text-align: center;
   font-family: sans-serif;
@@ -21,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+
   --bs-gutter-x: 0;
 }
 
@@ -40,4 +40,7 @@ body {
   color: var(--main-theme-color);
 }
 
-/* ********************** Begin Table content  ********************* */
+.footer {
+  padding: 1rem;
+  color: var(--yellow-color);
+}
