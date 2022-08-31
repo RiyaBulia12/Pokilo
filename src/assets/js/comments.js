@@ -1,5 +1,5 @@
 import { getPoke } from './api.js';
-import {importImages} from './functions.js';
+import { importImages } from './functions.js';
 
 const images = importImages(require.context('../img', false, /\.(png|jpe?g|svg)$/));
 function popupDetails(poke, id) {
