@@ -30,7 +30,7 @@ body {
 }
 
 .main-content {
-  width: 70%;
+  width: 80%;
   margin: 3rem auto;
   display: flex;
   justify-content: space-around;
@@ -40,6 +40,25 @@ body {
   color: var(--main-theme-color);
 }
 
+/* ------------------------ Homepage Content Begins  -------------------------- */
+.image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.image img {
+  width: 100%;
+}
+
+.desc {
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+}
+
+/* ------------------------ Homepage Content Ends  -------------------------- */
 .footer {
   padding: 1rem;
   color: var(--yellow-color);
