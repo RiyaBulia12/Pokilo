@@ -1,33 +1,47 @@
 // import './main.js'
-import { getPoke } from './api.js'
+import { getPoke } from './api.js';
 
-
-export const viewPoke = async (id) => {
-    const pokeDetails = await getPoke() 
-    pokeDetails.map(poke => {
-        popupDetails(poke, id)
-    })  
+function importImages(r) {
+  const images = {};
+  r.keys().forEach((item) => {
+    images[item.replace('./', '')] = r(item);
+  });
+  return images;
 }
 
+const images = importImages(require.context('../img', false, /\.(png|jpe?g|svg)$/));
+
 function popupDetails(poke, id) {
-    const pokeId = +poke.url.split('/').filter(Boolean).pop()
-    if(id === pokeId) {
-        document.querySelector('.project-content').innerHTML = `<div class="modal" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
+  const pokeId = +poke.url.split('/').filter(Boolean).pop();
+  if (id === pokeId) {
+    document.querySelector('.project-content').innerHTML = `<div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <p>Modal body text goes here.</p>
+              <img src="${images[`${id}.png`]}" alt="pokemon image 1" />
+              <h5 class="modal-title">${poke.name}</h5>
+              <p> Trick Room: Brave/Quiet. <br>
+                Pivot: Relaxed/Sassy. <br>
+                Mixed Attacker: Defense-Lowering Natures. <br>
+                Special Defense: Careful/Calm. <br>
+              </p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
-      </div>`
-    }
+      </div>`;
+  }
 }
+
+export const viewPoke = async (id) => {
+  const pokeDetails = await getPoke();
+  pokeDetails.forEach((poke) => {
+    popupDetails(poke, id);
+  });
+};
+
+export default { viewPoke };
+ 

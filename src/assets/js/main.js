@@ -1,12 +1,7 @@
 import '../css/main.css';
 
-import {
-  getPoke
-} from './api.js';
-import {
-  viewPoke
-} from './comments.js';
-
+import { getPoke } from './api.js';
+import { viewPoke } from './comments.js';
 
 function importImages(r) {
   const images = {};
@@ -29,15 +24,14 @@ const createGrid = (item, id) => {
         <img src="${images['like.png']}" alt="Like Icon" class="icon"/>
       </div>
       <div class="btn-container">
-        <button type="button" class="btn btn-warning comment-btn" id="${id}">Comment</button>
+        <button type="button" class="btn btn-warning comment-btn" id="${id}" data-bs-toggle="modal" data-bs-target="#projectModal">Comment</button>
       </div>
     </div>
   `;
 };
 
-
 const loadPoke = async () => {
-  let id = 1
+  let id = 1;
   const getPokemon = await getPoke();
   getPokemon.forEach((item) => {
     id += 1;
@@ -45,11 +39,10 @@ const loadPoke = async () => {
     const commentBtns = document.querySelectorAll('.comment-btn');
     commentBtns.forEach((comment) => {
       comment.onclick = (event) => {
-        console.log(event.target.id)
-        viewPoke(+event.target.id)
-      }
-    })
-  })
-}
+        viewPoke(+event.target.id);
+      };
+    });
+  });
+};
 
 loadPoke();
