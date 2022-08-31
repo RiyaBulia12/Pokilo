@@ -6,10 +6,4 @@ export const getPoke = async () => {
   return json.results;
 };
 
-// export const getPokeDetails = async (id) =>  {
-//    const getDetails = await fetch(baseUrl + '/pokemon/${id}')
-//    const jsonDetails = await getResult.json();
-//    return jsonDetails.results;
-// }
-
 export default { getPoke };

@@ -1,15 +1,7 @@
 import '../css/main.css';
-
 import { getPoke } from './api.js';
 import { viewPoke } from './comments.js';
-
-function importImages(r) {
-  const images = {};
-  r.keys().forEach((item) => {
-    images[item.replace('./', '')] = r(item);
-  });
-  return images;
-}
+import { importImages} from '.functions.js';
 
 const images = importImages(require.context('../img', false, /\.(png|jpe?g|svg)$/));
 const grid = document.querySelector('.poke-grid');

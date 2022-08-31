@@ -1,16 +1,7 @@
-// import './main.js'
 import { getPoke } from './api.js';
-
-function importImages(r) {
-  const images = {};
-  r.keys().forEach((item) => {
-    images[item.replace('./', '')] = r(item);
-  });
-  return images;
-}
+import {importImages} from './functions.js';
 
 const images = importImages(require.context('../img', false, /\.(png|jpe?g|svg)$/));
-
 function popupDetails(poke, id) {
   const pokeId = +poke.url.split('/').filter(Boolean).pop();
   if (id === pokeId) {
