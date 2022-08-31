@@ -58,6 +58,10 @@ body {
   font-size: large;
 }
 
+.modal-content {
+  background-color: var(--yellow-color);
+}
+
 /* ------------------------ Homepage Content Ends  -------------------------- */
 .footer {
   padding: 1rem;
