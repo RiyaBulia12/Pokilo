@@ -1,4 +1,4 @@
-export gitfunction importImages(r) {
+export function importImages(r) {
   const images = {};
   r.keys().forEach((item) => {
     images[item.replace('./', '')] = r(item);
