@@ -44,4 +44,3 @@ export const viewPoke = async (id) => {
 };
 
 export default { viewPoke };
- 
