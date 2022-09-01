@@ -1,8 +1,7 @@
 import { getPoke } from './api.js';
-import { importImages } from './functions.js';
+import images from './images.js';
 
-const images = importImages(require.context('../img', false, /\.(png|jpe?g|svg)$/));
-function popupDetails(poke, id) {
+const popupDetails = (poke, id) => {
   const pokeId = +poke.url.split('/').filter(Boolean).pop();
   if (id === pokeId) {
     document.querySelector('.project-content').innerHTML = `<div class="modal-content">
@@ -25,7 +24,7 @@ function popupDetails(poke, id) {
         </div>
       </div>`;
   }
-}
+};
 
 export const viewPoke = async (id) => {
   const pokeDetails = await getPoke();
