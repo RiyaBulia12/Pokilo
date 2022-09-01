@@ -38,11 +38,40 @@ body {
 
 .logo {
   position: relative;
-  left: 10%;
+
+  /* left: 10%; */
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-decoration: none;
+  color: white;
+  transition: color 1s linear;
+}
+
+.logo-text:hover {
+  color: var(--yellow-color);
+}
+
+.logo-dot {
+  color: var(--yellow-color);
+  font-size: 60px;
+}
+
+.menu-container {
+  justify-content: space-around;
 }
 
 #menu-list {
   justify-content: space-around;
+}
+
+.scrolled {
+  background-color: var(--main-theme-color);
+  transition: background-color 1s linear;
 }
 
 .img-section img {
@@ -57,10 +86,10 @@ body {
   box-shadow:
     0 0 0.2rem #fff,
     0 0 0.2rem #fff,
-    0 0 2rem #d8b54f,
-    0 0 0.8rem #d8b54f,
-    0 0 2.8rem #d8b54f,
-    inset 0 0 1.3rem #d8b54f;
+    0 0 2rem var(--yellow-color),
+    0 0 0.8rem var(--yellow-color),
+    0 0 2.8rem var(--yellow-color),
+    inset 0 0 1.3rem var(--yellow-color);
 }
 
 .main-text {
@@ -78,37 +107,11 @@ body {
     0 0 7px #fff,
     0 0 10px #fff,
     0 0 21px #fff,
-    0 0 42px #d8b54f,
-    0 0 82px #d8b54f,
-    0 0 92px #d8b54f,
-    0 0 102px #d8b54f,
-    0 0 151px #d8b54f;
-}
-
-@keyframes pulsate {
-  100% {
-    text-shadow:
-      0 0 4px #fff,
-      0 0 11px #fff,
-      0 0 19px #fff,
-      0 0 40px #d8b54f,
-      0 0 80px #d8b54f,
-      0 0 90px #d8b54f,
-      0 0 100px #d8b54f,
-      0 0 150px #d8b54f;
-  }
-
-  0% {
-    text-shadow:
-      0 0 4px #ffeeb9,
-      0 0 8px #ffe492,
-      0 0 12px #c3a753,
-      0 0 20px #d8b54f,
-      0 0 45px #d8b54f,
-      0 0 55px #d8b54f,
-      0 0 70px #d8b54f,
-      0 0 80px #d8b54f;
-  }
+    0 0 42px var(--yellow-color),
+    0 0 82px var(--yellow-color),
+    0 0 92px var(--yellow-color),
+    0 0 102px var(--yellow-color),
+    0 0 151px var(--yellow-color);
 }
 
 .h6-text {
@@ -138,6 +141,7 @@ body {
 .card {
   background-color: #191919;
   border-color: #191919;
+  height: 100%;
 }
 
 .image {
@@ -159,22 +163,26 @@ body {
 }
 
 .card-img {
-  filter: drop-shadow(2px 3px 12px #d8b54f);
+  filter: drop-shadow(2px 3px 12px var(--yellow-color));
+}
+
+.card-body-custom {
+  padding: 1rem;
 }
 
 .comment-btn {
-  color: #d8b54f;
+  color: var(--yellow-color);
   font-size: small;
   font-weight: 600;
   letter-spacing: 1px;
 }
 
 .bi-heart {
-  border-color: #d8b54f;
+  border-color: var(--yellow-color);
 }
 
 .bi-heart-fill {
-  color: #d8b54f;
+  color: var(--yellow-color);
 }
 
 .modal-content {
@@ -184,4 +192,44 @@ body {
 .footer {
   padding: 1rem;
   color: var(--yellow-color);
+  border-top: 1px solid;
+  width: 82%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .menu-container {
+    justify-content: center;
+  }
+
+  .header #nav li a {
+    letter-spacing: 3px;
+  }
+
+  .logo {
+    left: 0;
+  }
+
+  .img-section {
+    margin: 14rem 3rem 5rem;
+  }
+
+  .img-section img {
+    display: none;
+  }
+
+  .text-section {
+    letter-spacing: 10px;
+    padding: 2rem 0;
+    margin: 2rem 0;
+  }
+
+  .main-text {
+    font-size: xxx-large;
+  }
+
+  .text-container {
+    position: unset;
+    transform: none;
+  }
 }

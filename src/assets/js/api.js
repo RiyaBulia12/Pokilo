@@ -1,5 +1,5 @@
 const pokeUrl = 'https://pokeapi.co/api/v2/pokemon/';
-const baseUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/i9ViDXj1rEqPZZirEc18';
+const baseUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/i9ViDXj1rEqPZZirEc18/likes';
 
 export const getPoke = async () => {
   const getResult = await fetch(`${pokeUrl}?offset=0&limit=9`);
@@ -8,13 +8,13 @@ export const getPoke = async () => {
 };
 
 export const getLikes = async () => {
-  const getResult = await fetch(`${baseUrl}/likes`);
+  const getResult = await fetch(`${baseUrl}`);
   const json = await getResult.json();
   return json;
 };
 
 export const postLikes = async (itemId) => {
-  await fetch(`${baseUrl}/likes`, {
+  await fetch(`${baseUrl}`, {
     method: 'POST',
     body: JSON.stringify(itemId),
     headers: {
