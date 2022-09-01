@@ -2,6 +2,7 @@
    "env": {
       "test": {
          "plugins": [
+            "transform-require-context",
             "@babel/plugin-transform-modules-commonjs"
          ]
       }

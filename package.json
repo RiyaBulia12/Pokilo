@@ -8,7 +8,13 @@
     "start": "webpack serve --open",
     "build": "webpack",
     "deploy": "gh-pages -d dist",
-    "test": "jest --coverage --watchAll"
+    "test": "jest --watchAll --env=jsdom"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/mocks/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/mocks/fileMock.js"
+    }
   },
   "repository": {
     "type": "git",
@@ -24,6 +30,7 @@
     "@babel/plugin-transform-modules-commonjs": "^7.18.6",
     "@types/jest": "^28.1.7",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-transform-require-context": "^0.1.1",
     "css-loader": "^6.7.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
