@@ -16,7 +16,7 @@
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700;1,900&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \":root {\\n  --main-theme-color: #111;\\n  --dark-black-color: #040301;\\n  --yellow-color: #d8b54f;\\n}\\n\\n* {\\n  text-align: center;\\n  font-family: 'Barlow Condensed', sans-serif;\\n  font-weight: 600;\\n}\\n\\nbody {\\n  margin: 0;\\n  padding: 0;\\n  color: #fff;\\n  background-color: var(--main-theme-color);\\n  font-family: 'Barlow Condensed', sans-serif;\\n}\\n\\n.container-fluid {\\n  display: flex;\\n  flex-direction: column;\\n  --bs-gutter-x: 0;\\n}\\n\\n.header {\\n  background-color: var(--dark-black-color);\\n}\\n\\n.header #nav li a {\\n  color: var(--yellow-color);\\n  letter-spacing: 4px;\\n}\\n\\n.logo-img {}\\n\\n.img-section img {\\n  width: 100%;\\n  height: 100vh;\\n}\\n\\n.text-section {\\n  letter-spacing: 10px;\\n\\n  padding: 2rem 3.5rem;\\n  margin: 2rem 0;\\n  box-shadow: 0 0 .2rem #fff,\\n    0 0 .2rem #fff,\\n    0 0 2rem #d8b54f,\\n    0 0 0.8rem #d8b54f,\\n    0 0 2.8rem #d8b54f,\\n    inset 0 0 1.3rem #d8b54f;\\n}\\n\\n.main-text {\\n  font-size: 72px;\\n}\\n\\n.sub-text {\\n  font-size: 40px;\\n  letter-spacing: 22px;\\n}\\n\\n.shadowText {\\n  color: #fff;\\n  text-shadow:\\n    0 0 7px #fff,\\n    0 0 10px #fff,\\n    0 0 21px #fff,\\n    0 0 42px #d8b54f,\\n    0 0 82px #d8b54f,\\n    0 0 92px #d8b54f,\\n    0 0 102px #d8b54f,\\n    0 0 151px #d8b54f;\\n  animation: pulsate 1.5s infinite alternate;\\n\\n}\\n\\n@keyframes pulsate {\\n\\n  100% {\\n    text-shadow:\\n      0 0 4px #fff,\\n      0 0 11px #fff,\\n      0 0 19px #fff,\\n      0 0 40px #d8b54f,\\n      0 0 80px #d8b54f,\\n      0 0 90px #d8b54f,\\n      0 0 100px #d8b54f,\\n      0 0 150px #d8b54f;\\n\\n  }\\n\\n  0% {\\n    text-shadow:\\n      0 0 4px #ffeeb9,\\n      0 0 8px #ffe492,\\n      0 0 12px #c3a753,\\n      0 0 20px #d8b54f,\\n      0 0 45px #d8b54f,\\n      0 0 55px #d8b54f,\\n      0 0 70px #d8b54f,\\n      0 0 80px #d8b54f;\\n  }\\n}\\n\\n.h6-text {\\n  letter-spacing: 14px;\\n  font-size: 12px;\\n}\\n\\n.text-container {\\n  position: absolute;\\n  top: 50%;\\n  left: 20%;\\n  transform: translate(-50%, -50%);\\n}\\n\\n.main-content {\\n  width: 70%;\\n  margin: 3rem auto;\\n  display: flex;\\n  justify-content: space-around;\\n}\\n\\n/* ------------------------ Homepage Content Begins  -------------------------- */\\n.poke-card {\\n  background-color: #191919;\\n}\\n\\n.card {\\n  background-color: #191919;\\n  border-color: #191919;\\n}\\n\\n.image {\\n  width: 100px;\\n  height: 100px;\\n  object-fit: cover;\\n  margin: 0 auto;\\n}\\n\\n.image img {\\n  width: 100%;\\n}\\n\\n\\n.desc {\\n  display: flex;\\n  justify-content: right;\\n  font-size: large;\\n  gap: 1rem;\\n}\\n\\n.card-img {\\n  filter: drop-shadow(2px 3px 12px #d8b54f);\\n}\\n\\n.comment-btn {\\n  color: #d8b54f;\\n  font-size: small;\\n  font-weight: 600;\\n  letter-spacing: 1px;\\n}\\n\\n.bi-heart {\\n  border-color: #d8b54f;\\n}\\n\\n.bi-heart-fill {\\n  color: #d8b54f;\\n}\\n\\n.modal-content {\\n  background-color: var(--yellow-color);\\n}\\n\\n/* ------------------------ Homepage Content Ends  -------------------------- */\\n.footer {\\n  padding: 1rem;\\n  color: var(--yellow-color);\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://pokemon/./src/assets/css/main.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700;1,900&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \":root {\\n  --main-theme-color: #111;\\n  --dark-black-color: #040301;\\n  --yellow-color: #d8b54f;\\n}\\n\\n* {\\n  text-align: center;\\n  font-family: 'Barlow Condensed', sans-serif;\\n  font-weight: 600;\\n}\\n\\nbody {\\n  margin: 0;\\n  padding: 0;\\n  color: #fff;\\n  background-color: var(--main-theme-color);\\n  font-family: 'Barlow Condensed', sans-serif;\\n}\\n\\n.container-fluid {\\n  display: flex;\\n  flex-direction: column;\\n  --bs-gutter-x: 0;\\n}\\n\\n.header {\\n  background-color: var(--dark-black-color);\\n}\\n\\n.header #nav li a {\\n  color: var(--yellow-color);\\n  letter-spacing: 4px;\\n}\\n\\n.logo-img {}\\n\\n.img-section img {\\n  width: 100%;\\n  height: 100vh;\\n}\\n\\n.text-section {\\n  letter-spacing: 10px;\\n\\n  padding: 2rem 3.5rem;\\n  margin: 2rem 0;\\n  box-shadow: 0 0 .2rem #fff,\\n    0 0 .2rem #fff,\\n    0 0 2rem #d8b54f,\\n    0 0 0.8rem #d8b54f,\\n    0 0 2.8rem #d8b54f,\\n    inset 0 0 1.3rem #d8b54f;\\n}\\n\\n.main-text {\\n  font-size: 72px;\\n}\\n\\n.sub-text {\\n  font-size: 40px;\\n  letter-spacing: 22px;\\n}\\n\\n.shadowText {\\n  color: #fff;\\n  text-shadow:\\n    0 0 7px #fff,\\n    0 0 10px #fff,\\n    0 0 21px #fff,\\n    0 0 42px #d8b54f,\\n    0 0 82px #d8b54f,\\n    0 0 92px #d8b54f,\\n    0 0 102px #d8b54f,\\n    0 0 151px #d8b54f;\\n  animation: pulsate 1.5s infinite alternate;\\n\\n}\\n\\n@keyframes pulsate {\\n\\n  100% {\\n    text-shadow:\\n      0 0 4px #fff,\\n      0 0 11px #fff,\\n      0 0 19px #fff,\\n      0 0 40px #d8b54f,\\n      0 0 80px #d8b54f,\\n      0 0 90px #d8b54f,\\n      0 0 100px #d8b54f,\\n      0 0 150px #d8b54f;\\n\\n  }\\n\\n  0% {\\n    text-shadow:\\n      0 0 4px #ffeeb9,\\n      0 0 8px #ffe492,\\n      0 0 12px #c3a753,\\n      0 0 20px #d8b54f,\\n      0 0 45px #d8b54f,\\n      0 0 55px #d8b54f,\\n      0 0 70px #d8b54f,\\n      0 0 80px #d8b54f;\\n  }\\n}\\n\\n.h6-text {\\n  letter-spacing: 14px;\\n  font-size: 12px;\\n}\\n\\n.text-container {\\n  position: absolute;\\n  top: 50%;\\n  left: 20%;\\n  transform: translate(-50%, -50%);\\n}\\n\\n.main-content {\\n  width: 80%;\\n  margin: 3rem auto;\\n  display: flex;\\n  justify-content: space-around;\\n}\\n\\n/* ------------------------ Homepage Content Begins  -------------------------- */\\n.poke-card {\\n  background-color: #191919;\\n}\\n\\n.card {\\n  background-color: #191919;\\n  border-color: #191919;\\n}\\n\\n.image {\\n  width: 100px;\\n  height: 100px;\\n  object-fit: cover;\\n  margin: 0 auto;\\n}\\n\\n.image img {\\n  width: 100%;\\n}\\n\\n.desc {\\n  display: flex;\\n  justify-content: right;\\n  font-size: large;\\n  gap: 1rem;\\n}\\n\\n/* .desc {\\n  display: flex;\\n  justify-content: space-between;\\n  font-size: large;\\n} */\\n.card-img {\\n  filter: drop-shadow(2px 3px 12px #d8b54f);\\n}\\n\\n.comment-btn {\\n  color: #d8b54f;\\n  font-size: small;\\n  font-weight: 600;\\n  letter-spacing: 1px;\\n}\\n\\n.bi-heart {\\n  border-color: #d8b54f;\\n}\\n\\n.bi-heart-fill {\\n  color: #d8b54f;\\n}\\n\\n.modal-content {\\n  background-color: var(--yellow-color);\\n}\\n\\n.footer {\\n  padding: 1rem;\\n  color: var(--yellow-color);\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://pokemon/./src/assets/css/main.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -125,7 +125,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \******************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./banner.jpg\": \"./src/assets/img/banner.jpg\",\n\t\"./favicon.png\": \"./src/assets/img/favicon.png\",\n\t\"./logo.png\": \"./src/assets/img/logo.png\",\n\t\"./pokemon1.png\": \"./src/assets/img/pokemon1.png\",\n\t\"./pokemon10.png\": \"./src/assets/img/pokemon10.png\",\n\t\"./pokemon11.png\": \"./src/assets/img/pokemon11.png\",\n\t\"./pokemon12.png\": \"./src/assets/img/pokemon12.png\",\n\t\"./pokemon13.png\": \"./src/assets/img/pokemon13.png\",\n\t\"./pokemon14.png\": \"./src/assets/img/pokemon14.png\",\n\t\"./pokemon15.png\": \"./src/assets/img/pokemon15.png\",\n\t\"./pokemon16.png\": \"./src/assets/img/pokemon16.png\",\n\t\"./pokemon17.png\": \"./src/assets/img/pokemon17.png\",\n\t\"./pokemon18.png\": \"./src/assets/img/pokemon18.png\",\n\t\"./pokemon19.png\": \"./src/assets/img/pokemon19.png\",\n\t\"./pokemon2.png\": \"./src/assets/img/pokemon2.png\",\n\t\"./pokemon20.png\": \"./src/assets/img/pokemon20.png\",\n\t\"./pokemon3.png\": \"./src/assets/img/pokemon3.png\",\n\t\"./pokemon4.png\": \"./src/assets/img/pokemon4.png\",\n\t\"./pokemon5.png\": \"./src/assets/img/pokemon5.png\",\n\t\"./pokemon6.png\": \"./src/assets/img/pokemon6.png\",\n\t\"./pokemon7.png\": \"./src/assets/img/pokemon7.png\",\n\t\"./pokemon8.png\": \"./src/assets/img/pokemon8.png\",\n\t\"./pokemon9.png\": \"./src/assets/img/pokemon9.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/assets/img sync \\\\.(png%7Cjpe?g%7Csvg)$\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/_sync_nonrecursive_\\.(png%257Cjpe?");
+eval("var map = {\n\t\"./1.png\": \"./src/assets/img/1.png\",\n\t\"./10.png\": \"./src/assets/img/10.png\",\n\t\"./11.png\": \"./src/assets/img/11.png\",\n\t\"./12.png\": \"./src/assets/img/12.png\",\n\t\"./13.png\": \"./src/assets/img/13.png\",\n\t\"./14.png\": \"./src/assets/img/14.png\",\n\t\"./15.png\": \"./src/assets/img/15.png\",\n\t\"./16.png\": \"./src/assets/img/16.png\",\n\t\"./17.png\": \"./src/assets/img/17.png\",\n\t\"./18.png\": \"./src/assets/img/18.png\",\n\t\"./19.png\": \"./src/assets/img/19.png\",\n\t\"./2.png\": \"./src/assets/img/2.png\",\n\t\"./20.png\": \"./src/assets/img/20.png\",\n\t\"./3.png\": \"./src/assets/img/3.png\",\n\t\"./4.png\": \"./src/assets/img/4.png\",\n\t\"./5.png\": \"./src/assets/img/5.png\",\n\t\"./6.png\": \"./src/assets/img/6.png\",\n\t\"./7.png\": \"./src/assets/img/7.png\",\n\t\"./8.png\": \"./src/assets/img/8.png\",\n\t\"./9.png\": \"./src/assets/img/9.png\",\n\t\"./banner.jpg\": \"./src/assets/img/banner.jpg\",\n\t\"./favicon.png\": \"./src/assets/img/favicon.png\",\n\t\"./like.png\": \"./src/assets/img/like.png\",\n\t\"./logo.png\": \"./src/assets/img/logo.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/assets/img sync \\\\.(png%7Cjpe?g%7Csvg)$\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/_sync_nonrecursive_\\.(png%257Cjpe?");
 
 /***/ }),
 
@@ -147,7 +147,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   \"viewPoke\": () => (/* binding */ viewPoke)\n/* harmony export */ });\n/* harmony import */ var _api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api.js */ \"./src/assets/js/api.js\");\n/* harmony import */ var _functions_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./functions.js */ \"./src/assets/js/functions.js\");\n\n\n\nconst images = (0,_functions_js__WEBPACK_IMPORTED_MODULE_1__.importImages)(__webpack_require__(\"./src/assets/img sync \\\\.(png%7Cjpe?g%7Csvg)$\"));\nfunction popupDetails(poke, id) {\n  const pokeId = +poke.url.split('/').filter(Boolean).pop();\n  if (id === pokeId) {\n    document.querySelector('.project-content').innerHTML = `<div class=\"modal-content\">\n            <div class=\"modal-header\">\n              <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>\n            </div>\n            <div class=\"modal-body\">\n              <img src=\"${images[`${id}.png`]}\" alt=\"pokemon image 1\" />\n              <h5 class=\"modal-title\">${poke.name}</h5>\n              <p> Trick Room: Brave/Quiet. <br>\n                Pivot: Relaxed/Sassy. <br>\n                Mixed Attacker: Defense-Lowering Natures. <br>\n                Special Defense: Careful/Calm. <br>\n              </p>\n            </div>\n            <div class=\"modal-footer\">\n              <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Close</button>\n            </div>\n          </div>\n        </div>\n      </div>`;\n  }\n}\n\nconst viewPoke = async (id) => {\n  const pokeDetails = await (0,_api_js__WEBPACK_IMPORTED_MODULE_0__.getPoke)();\n  pokeDetails.forEach((poke) => {\n    popupDetails(poke, id);\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({ viewPoke });\n\n\n//# sourceURL=webpack://pokemon/./src/assets/js/comments.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   \"viewPoke\": () => (/* binding */ viewPoke)\n/* harmony export */ });\n/* harmony import */ var _api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api.js */ \"./src/assets/js/api.js\");\n/* harmony import */ var _functions_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./functions.js */ \"./src/assets/js/functions.js\");\n\n\n\nconst images = (0,_functions_js__WEBPACK_IMPORTED_MODULE_1__.importImages)(__webpack_require__(\"./src/assets/img sync \\\\.(png%7Cjpe?g%7Csvg)$\"));\nfunction popupDetails(poke, id) {\n  const pokeId = +poke.url.split('/').filter(Boolean).pop();\n  if (id === pokeId) {\n    document.querySelector('.project-content').innerHTML = `<div class=\"modal-content\">\n            <div class=\"modal-header\">\n              <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>\n            </div>\n            <div class=\"modal-body\">\n              <img src=\"${images[`${id}.png`]}\" alt=\"pokemon image 1\" />\n              <h5 class=\"modal-title\">${poke.name}</h5>\n              <p> Trick Room: Brave/Quiet. <br>\n                Pivot: Relaxed/Sassy. <br>\n                Mixed Attacker: Defense-Lowering Natures. <br>\n                Special Defense: Careful/Calm. <br>\n              </p>\n            </div>\n            <div class=\"modal-footer\">\n              <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Close</button>\n            </div>\n          </div>\n        </div>\n      </div>`;\n  }\n}\n\nconst viewPoke = async (id) => {\n  const pokeDetails = await (0,_api_js__WEBPACK_IMPORTED_MODULE_0__.getPoke)();\n  pokeDetails.forEach((poke) => {\n    popupDetails(poke, id);\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({ viewPoke });\n\n\n\n//# sourceURL=webpack://pokemon/./src/assets/js/comments.js?");
 
 /***/ }),
 
@@ -158,7 +158,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   \"importImages\": () => (/* binding */ importImages)\n/* harmony export */ });\nfunction importImages(r) {\n  const images = {};\n  r.keys().forEach((item) => {\n    images[item.replace('./', '')] = r(item);\n  });\n  return images;\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({ importImages });\n\n\n//# sourceURL=webpack://pokemon/./src/assets/js/functions.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   \"importImages\": () => (/* binding */ importImages)\n/* harmony export */ });\nfunction importImages(r) {\n  const images = {};\n  r.keys().forEach((item) => {\n    images[item.replace('./', '')] = r(item);\n  });\n  return images;\n}\n// <<<<<<< HEAD\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({ importImages });\n// =======\n// export default { importImages };\n// >>>>>>> 3fc844d071526692b4d574b58b074ae97493bc17\n\n\n//# sourceURL=webpack://pokemon/./src/assets/js/functions.js?");
 
 /***/ }),
 
@@ -180,7 +180,227 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/main.css */ \"./src/assets/css/main.css\");\n/* harmony import */ var _api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./api.js */ \"./src/assets/js/api.js\");\n/* harmony import */ var _comments_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./comments.js */ \"./src/assets/js/comments.js\");\n/* harmony import */ var _functions_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./functions.js */ \"./src/assets/js/functions.js\");\n/* harmony import */ var _likes_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./likes.js */ \"./src/assets/js/likes.js\");\n\n\n\n\n\n\nconst images = (0,_functions_js__WEBPACK_IMPORTED_MODULE_3__.importImages)(__webpack_require__(\"./src/assets/img sync \\\\.(png%7Cjpe?g%7Csvg)$\"));\nconst grid = document.querySelector('.poke-grid');\nconst createGrid = (item, id, likes) => {\n  grid.innerHTML += `\n    <div class=\"col-3 px-4 pt-4 poke-card\">\n      <div class=\"card\">\n        <div class=\"desc\">\n          <i class=\"bi bi-heart\" id=\"${item?.name}\"></i>\n          <span class=\"like-counts\" id=\"like-${item?.name}\">${likes}</span>\n        </div>\n        <img class=\"card-img py-4 w-75 m-auto\" src=\"${images[`${id}.png`]}\" alt=\"Pokemon Image\">\n        <div class=\"card-body\">\n          <h3 class=\"card-title text-capitalize\">${item.name}</h3>\n          <div class=\"btn-container\">\n            <button type=\"button\" class=\"btn comment-btn text-uppercase\" id=\"${id}\" data-bs-toggle=\"modal\" data-bs-target=\"#projectModal\">Comment</button>\n          </div>\n        </div>\n\n    </div>\n  </div>`;\n  //   <div class=\"image\">\n  //     <img src=\"${images[`${id}.png`]}\" alt=\"pokemon image 1\" />\n  //   </div>\n  //   <div class=\"desc\">\n  //     <h3>${item.name}</h3>\n  //     <i class=\"bi bi-heart\" id=\"${item?.name}\"></i>\n  //     <span class=\"like-counts\" id=\"like-${item?.name}\">${likes}</span>\n  //   </div>\n  //   <div class=\"btn-container\">\n  //     <button type=\"button\" class=\"btn btn-warning comment-btn\" id=\"${id}\" data-bs-toggle=\"modal\" data-bs-target=\"#projectModal\">Comment</button>\n  //   </div>\n  // </div>\n  // `;\n};\n\nconst loadPoke = async () => {\n  const getPokemon = await (0,_api_js__WEBPACK_IMPORTED_MODULE_1__.getPoke)();\n  const getLikeList = await (0,_api_js__WEBPACK_IMPORTED_MODULE_1__.getLikes)();\n  getPokemon.forEach((item, id) => {\n    const like = getLikeList[id]?.likes;\n    const pokeId = +item.url.split('/').filter(Boolean).pop();\n    createGrid(item, pokeId, like);\n\n    const likeIcon = document.querySelectorAll('.bi-heart');\n    likeIcon.forEach((item) => {\n      item.addEventListener('click', (e) => {\n        (0,_likes_js__WEBPACK_IMPORTED_MODULE_4__.updateLikes)(e);\n      });\n    });\n\n    const commentBtns = document.querySelectorAll('.comment-btn');\n    commentBtns.forEach((comment) => {\n      comment.onclick = (event) => {\n        (0,_comments_js__WEBPACK_IMPORTED_MODULE_2__.viewPoke)(+event.target.id);\n      };\n    });\n  });\n};\n\nloadPoke();\n\n\n//# sourceURL=webpack://pokemon/./src/assets/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/main.css */ \"./src/assets/css/main.css\");\n/* harmony import */ var _api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./api.js */ \"./src/assets/js/api.js\");\n/* harmony import */ var _comments_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./comments.js */ \"./src/assets/js/comments.js\");\n/* harmony import */ var _functions_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./functions.js */ \"./src/assets/js/functions.js\");\n/* harmony import */ var _likes_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./likes.js */ \"./src/assets/js/likes.js\");\n\n\n\n\n\n\n\nconst images = (0,_functions_js__WEBPACK_IMPORTED_MODULE_3__.importImages)(__webpack_require__(\"./src/assets/img sync \\\\.(png%7Cjpe?g%7Csvg)$\"));\nconst grid = document.querySelector('.poke-grid');\nconst createGrid = (item, id, likes) => {\n  grid.innerHTML += `\n    <div class=\"col-3 px-4 pt-4 poke-card\">\n      <div class=\"card\">\n        <div class=\"desc\">\n          <i class=\"bi bi-heart\" id=\"${item?.name}\"></i>\n          <span class=\"like-counts\" id=\"like-${item?.name}\">${likes}</span>\n        </div>\n        <img class=\"card-img py-4 w-75 m-auto\" src=\"${images[`${id}.png`]}\" alt=\"Pokemon Image\">\n        <div class=\"card-body\">\n          <h3 class=\"card-title text-capitalize\">${item.name}</h3>\n          <div class=\"btn-container\">\n            <button type=\"button\" class=\"btn comment-btn text-uppercase\" id=\"${id}\" data-bs-toggle=\"modal\" data-bs-target=\"#projectModal\">Comment</button>\n          </div>\n        </div>\n\n    </div>\n  </div>`;\n  //   <div class=\"image\">\n  //     <img src=\"${images[`${id}.png`]}\" alt=\"pokemon image 1\" />\n  //   </div>\n  //   <div class=\"desc\">\n  //     <h3>${item.name}</h3>\n  //     <i class=\"bi bi-heart\" id=\"${item?.name}\"></i>\n  //     <span class=\"like-counts\" id=\"like-${item?.name}\">${likes}</span>\n  //   </div>\n  //   <div class=\"btn-container\">\n  //     <button type=\"button\" class=\"btn btn-warning comment-btn\" id=\"${id}\" data-bs-toggle=\"modal\" data-bs-target=\"#projectModal\">Comment</button>\n  //   </div>\n  // </div>\n  // `;\n};\n\nconst loadPoke = async () => {\n  const getPokemon = await (0,_api_js__WEBPACK_IMPORTED_MODULE_1__.getPoke)();\n  const getLikeList = await (0,_api_js__WEBPACK_IMPORTED_MODULE_1__.getLikes)();\n  getPokemon.forEach((item, id) => {\n    const like = getLikeList[id]?.likes;\n    const pokeId = +item.url.split('/').filter(Boolean).pop();\n    createGrid(item, pokeId, like);\n\n    const likeIcon = document.querySelectorAll('.bi-heart');\n    likeIcon.forEach((item) => {\n      item.addEventListener('click', (e) => {\n        (0,_likes_js__WEBPACK_IMPORTED_MODULE_4__.updateLikes)(e);\n      });\n    });\n\n    // =======\n    // import { getPoke } from './api.js';\n    // import { viewPoke } from './comments.js';\n    // import { importImages } from './functions.js';\n\n    // const images = importImages(require.context('../img', false, /\\.(png|jpe?g|svg)$/));\n    // const grid = document.querySelector('.poke-grid');\n    // const createGrid = (item, id) => {\n    //   grid.innerHTML += `\n    //     <div class=\"col-3 \">\n    //       <div class=\"image\">\n    //         <img src=\"${images[`${id}.png`]}\" alt=\"pokemon image 1\" />\n    //       </div>\n    //       <div class=\"desc\">\n    //         <h3>${item.name}</h3>\n    //         <img src=\"${images['like.png']}\" alt=\"Like Icon\" class=\"icon\"/>\n    //       </div>\n    //       <div class=\"btn-container\">\n    //         <button type=\"button\" class=\"btn btn-warning comment-btn\" id=\"${id}\" data-bs-toggle=\"modal\" data-bs-target=\"#projectModal\">Comment</button>\n    //       </div>\n    //     </div>\n    //   `;\n    // };\n\n    // const loadPoke = async () => {\n    //   let id = 1;\n    //   const getPokemon = await getPoke();\n    //   getPokemon.forEach((item) => {\n    //     id += 1;\n    //     createGrid(item, id);\n    // >>>>>>> 3fc844d071526692b4d574b58b074ae97493bc17\n    const commentBtns = document.querySelectorAll('.comment-btn');\n    commentBtns.forEach((comment) => {\n      comment.onclick = (event) => {\n        (0,_comments_js__WEBPACK_IMPORTED_MODULE_2__.viewPoke)(+event.target.id);\n      };\n    });\n  });\n};\n\n// <<<<<<< HEAD\nloadPoke();\n// =======\n// loadPoke();\n// >>>>>>> 3fc844d071526692b4d574b58b074ae97493bc17\n\n\n//# sourceURL=webpack://pokemon/./src/assets/js/main.js?");
+
+/***/ }),
+
+/***/ "./src/assets/img/1.png":
+/*!******************************!*\
+  !*** ./src/assets/img/1.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"102350da58482ee4ad1c.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/1.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/10.png":
+/*!*******************************!*\
+  !*** ./src/assets/img/10.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"6e20e883ae77907854a0.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/10.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/11.png":
+/*!*******************************!*\
+  !*** ./src/assets/img/11.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"b3751f5a5f82b6b2a5b9.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/11.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/12.png":
+/*!*******************************!*\
+  !*** ./src/assets/img/12.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"ea8b695bdf8a14837469.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/12.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/13.png":
+/*!*******************************!*\
+  !*** ./src/assets/img/13.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"c5d519f0caee696f726b.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/13.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/14.png":
+/*!*******************************!*\
+  !*** ./src/assets/img/14.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"72932b506dca2608e32b.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/14.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/15.png":
+/*!*******************************!*\
+  !*** ./src/assets/img/15.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"30726753f7e882050125.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/15.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/16.png":
+/*!*******************************!*\
+  !*** ./src/assets/img/16.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"2d8941b05f4f4d05c3ad.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/16.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/17.png":
+/*!*******************************!*\
+  !*** ./src/assets/img/17.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"ef2a3a603482502128ea.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/17.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/18.png":
+/*!*******************************!*\
+  !*** ./src/assets/img/18.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"adb0dd56f9410ed1070b.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/18.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/19.png":
+/*!*******************************!*\
+  !*** ./src/assets/img/19.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"70316b79434e7727f5d4.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/19.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/2.png":
+/*!******************************!*\
+  !*** ./src/assets/img/2.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"651a86c07b304c7ff753.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/2.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/20.png":
+/*!*******************************!*\
+  !*** ./src/assets/img/20.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"b411511ba47903a33cc0.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/20.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/3.png":
+/*!******************************!*\
+  !*** ./src/assets/img/3.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"76df1a2e169ee0136e9b.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/3.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/4.png":
+/*!******************************!*\
+  !*** ./src/assets/img/4.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"3284e51ab1112efd91cc.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/4.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/5.png":
+/*!******************************!*\
+  !*** ./src/assets/img/5.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"f3cb5a2109ecd6067892.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/5.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/6.png":
+/*!******************************!*\
+  !*** ./src/assets/img/6.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"c285ffdeff42fc622673.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/6.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/7.png":
+/*!******************************!*\
+  !*** ./src/assets/img/7.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"8aa607dea488ce0c680b.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/7.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/8.png":
+/*!******************************!*\
+  !*** ./src/assets/img/8.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"cd8e100dc1deec94c27b.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/8.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/9.png":
+/*!******************************!*\
+  !*** ./src/assets/img/9.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"5e9a9a0ae7015c648ea4.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/9.png?");
 
 /***/ }),
 
@@ -206,6 +426,17 @@ eval("module.exports = __webpack_require__.p + \"41a029c229ed12123279.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/img/like.png":
+/*!*********************************!*\
+  !*** ./src/assets/img/like.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"512bc1bdffab949c3c40.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/like.png?");
+
+/***/ }),
+
 /***/ "./src/assets/img/logo.png":
 /*!*********************************!*\
   !*** ./src/assets/img/logo.png ***!
@@ -214,226 +445,6 @@ eval("module.exports = __webpack_require__.p + \"41a029c229ed12123279.png\";\n\n
 
 "use strict";
 eval("module.exports = __webpack_require__.p + \"abbffc351702cf5621dc.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/logo.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon1.png":
-/*!*************************************!*\
-  !*** ./src/assets/img/pokemon1.png ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"b0ad0d81282bc3b6dcd3.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon1.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon10.png":
-/*!**************************************!*\
-  !*** ./src/assets/img/pokemon10.png ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"2309102d804690ca5303.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon10.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon11.png":
-/*!**************************************!*\
-  !*** ./src/assets/img/pokemon11.png ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"97eb4ccfbe10fb5e3635.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon11.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon12.png":
-/*!**************************************!*\
-  !*** ./src/assets/img/pokemon12.png ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"2411906b19a70a707878.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon12.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon13.png":
-/*!**************************************!*\
-  !*** ./src/assets/img/pokemon13.png ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"e7c6ead54ae620111cd6.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon13.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon14.png":
-/*!**************************************!*\
-  !*** ./src/assets/img/pokemon14.png ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"1fa0e15c2dfd9d08da5d.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon14.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon15.png":
-/*!**************************************!*\
-  !*** ./src/assets/img/pokemon15.png ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"110934914f9dadc883af.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon15.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon16.png":
-/*!**************************************!*\
-  !*** ./src/assets/img/pokemon16.png ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"f9a705b8b523afa831f2.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon16.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon17.png":
-/*!**************************************!*\
-  !*** ./src/assets/img/pokemon17.png ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"ee3d8e696fd443c746e0.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon17.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon18.png":
-/*!**************************************!*\
-  !*** ./src/assets/img/pokemon18.png ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"ae669f77d63923c7cd11.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon18.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon19.png":
-/*!**************************************!*\
-  !*** ./src/assets/img/pokemon19.png ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"9fd4f759a4816f508075.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon19.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon2.png":
-/*!*************************************!*\
-  !*** ./src/assets/img/pokemon2.png ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"a47531821cbf51d7d99b.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon2.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon20.png":
-/*!**************************************!*\
-  !*** ./src/assets/img/pokemon20.png ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"c8906644d1e5ba444c1c.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon20.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon3.png":
-/*!*************************************!*\
-  !*** ./src/assets/img/pokemon3.png ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"b8943b06e15ba6b4cf8d.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon3.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon4.png":
-/*!*************************************!*\
-  !*** ./src/assets/img/pokemon4.png ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"59d4a6f6146123ca8272.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon4.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon5.png":
-/*!*************************************!*\
-  !*** ./src/assets/img/pokemon5.png ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"a1537975973f50017d93.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon5.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon6.png":
-/*!*************************************!*\
-  !*** ./src/assets/img/pokemon6.png ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"221c71b8d98ce57da212.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon6.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon7.png":
-/*!*************************************!*\
-  !*** ./src/assets/img/pokemon7.png ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"e10540e8facb4a84a51b.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon7.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon8.png":
-/*!*************************************!*\
-  !*** ./src/assets/img/pokemon8.png ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"21a737c65b1a0ea2f84d.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon8.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/pokemon9.png":
-/*!*************************************!*\
-  !*** ./src/assets/img/pokemon9.png ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"5c1bdefb43934bb65542.png\";\n\n//# sourceURL=webpack://pokemon/./src/assets/img/pokemon9.png?");
 
 /***/ })
 
