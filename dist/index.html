@@ -4,11 +4,11 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width initial-scale=1.0">
-   <!-- <link type="image/png" sizes="16x16" rel="icon" href="../src/assets/img/favicon.png"> -->
+   <link type="image/png" sizes="16x16" rel="icon" href="41a029c229ed12123279.png">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-   <title>Pokemon</title>
+   <title>Pokílö</title>
 <script defer src="index.js"></script></head>
 
 <body>
@@ -16,28 +16,39 @@
       <header class="header">
          <div class="logo">
             <a class="logo-img" href="#">
-               <!-- <img class="" src="" alt="Logo Icon"> -->
-            </a>
+               <img class="" src="abbffc351702cf5621dc.png" alt="Logo Icon"> logo </a>
          </div>
-         <nav class="menu-container">
-            <!-- <img class="menu-icon" src="" alt="menu-button"> -->
-            <div>
-               <ul class="nav" id="nav">
-                  <li class="nav-item"><a href="#pokemon" class="nav-link" aria-label="Pokemon">Pokemon(16)</a></li>
-                  <li class="nav-item"><a href="#pokemon" class="nav-link" aria-label="Pokemon">Pikachu(16)</a></li>
-                  <li class="nav-item"><a href="#pokemon" class="nav-link" aria-label="Pokemon">More(16)</a></li>
+         <nav class="menu-container navbar fixed-top navbar-light p-0">
+            <div class="container-fluid">
+               <ul class="nav my-4 fs-6 text-uppercase" id="nav">
+                  <li class="nav-item px-5"><a href="#pokemon" class="nav-link" aria-label="Pokemon">Pokemon <span
+                           class="poke-counts" id="pokeCounts"></span>
+                     </a></li>
+                  <li class="nav-item px-5"><a href="#pokemon" class="nav-link" aria-label="Pokemon">Video Games</a>
+                  </li>
+                  <li class="nav-item px-5"><a href="#pokemon" class="nav-link" aria-label="Pokemon">Events</a></li>
                </ul>
             </div>
          </nav>
+         <section class="img-section">
+            <div class="text-container text-uppercase">
+               <div class="text-section text-uppercase">
+                  <h1 class="main-text shadowText">Pikachu </h1>
+                  <h2 class="sub-text shadowText">Pika Pika </h2>
+               </div>
+               <h6 class="h6-text shadowText">The good old memories</h6>
+            </div>
+            <img alt="banner" class="img-fluid" src="6f035efcbeabb09df369.jpg" />
+         </section>
       </header>
       <div class="main-content">
          <div class="container">
-            <div class="poke-grid row">
+            <div class="poke-grid row gap-5 justify-content-center">
             </div>
             <div class="modal fade" id="projectModal">
                <div class="modal-dialog modal-m" id="modal-dialog">
                   <div class="modal-content" id="modal-content">
-                     <section class="project-content"></section>
+                     <div class="project-content"></div>
                   </div>
                </div>
             </div>
@@ -47,7 +58,9 @@
          <p>Created by Recillah and Riya under the Microverse guidance</p>
       </footer>
    </div>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>

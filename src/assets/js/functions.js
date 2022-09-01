@@ -5,4 +5,5 @@ export function importImages(r) {
   });
   return images;
 }
+
 export default { importImages };
