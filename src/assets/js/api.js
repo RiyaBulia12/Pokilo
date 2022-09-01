@@ -22,3 +22,19 @@ export const postLikes = async (itemId) => {
     },
   });
 };
+
+export const getComments = async () => {
+   const getResult = await fetch(`${baseUrl}/comments`);
+   const json = await getResult.json();
+   return json;
+};
+
+export const postComments = async (commentBody) => {
+   await fetch(`${baseUrl}/comments`, {
+     method: 'POST',
+     body: JSON.stringify(commentBody),
+     headers: {
+       'Content-type': 'application/json; charset=UTF-8',
+     },
+   });
+};
