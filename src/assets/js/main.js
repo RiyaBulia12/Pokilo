@@ -22,7 +22,7 @@ playIcon.addEventListener('click', () => {
     playIcon.classList.remove('bi-play-btn');
   } else {
     audio.pause();
-    playIcon.classList.add('bi-play-btn')
-    playIcon.classList.remove('bi-pause-btn')
+    playIcon.classList.add('bi-play-btn');
+    playIcon.classList.remove('bi-pause-btn');
   }
-})
+});

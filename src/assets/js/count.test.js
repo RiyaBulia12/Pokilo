@@ -25,8 +25,8 @@ describe('comments count', () => {
   const testList = ['comment1', 'comment2'];
   it('it sould return the right number of comment counts', () => {
     expect(commsCount(testList)).toEqual(2);
-  })
+  });
   it('it sould return o for an empty list', () => {
     expect(commsCount([])).toEqual(0);
-  })
-})
+  });
+});
