@@ -1,7 +1,5 @@
 import { getPoke, getComments, postComments } from './api.js';
-import { importImages } from './functions.js';
-
-const images = importImages(require.context('../img', false, /\.(png|jpe?g|svg)$/));
+import images from './images.js';
 
 const getPokeId = (url) => +url.split('/').filter(Boolean).pop();
 
