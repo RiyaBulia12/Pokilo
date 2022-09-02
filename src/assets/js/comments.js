@@ -44,16 +44,17 @@ export const commsCount = (comments) => (comments ? comments.length : 0);
 const getCommentList = async (id) => {
   const comments = await getComments(id);
   const commentSection = document.querySelector('.comment-section');
+  commentSection.innerHTML = '';
   comments.forEach((item) => {
     const p = document.createElement('p');
     p.innerHTML = `${item.username}: ${item.comment}`;
     commentSection.append(p);
+    const count = commsCount(comments);
+    document.getElementById('commentCount').innerHTML = `${count}`;
   });
-  const count = commsCount(comments);
-  document.getElementById('commentCount').innerHTML = `${count}`;
 };
 
-const sendComments = (id) => {
+const sendComments = async (id) => {
   const name = document.getElementById('name');
   const comment = document.getElementById('comment');
   const commentBody = {
@@ -61,7 +62,10 @@ const sendComments = (id) => {
     username: name.value,
     comment: comment.value,
   };
-  postComments(commentBody);
+  await postComments(commentBody);
+  getCommentList(id);
+  name.value = '';
+  comment.value = '';
 };
 
 const viewPoke = async (id) => {
