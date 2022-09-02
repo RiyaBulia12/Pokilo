@@ -30,4 +30,3 @@ describe('comments count', () => {
     expect(commsCount([])).toEqual(0);
   });
 });
-
