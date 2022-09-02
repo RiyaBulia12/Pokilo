@@ -1,6 +1,6 @@
 import updateLikes from './likes.js';
 import { getLikes, getPoke } from './api.js';
-import { viewPoke } from './comments.js';
+import viewPoke from './comments.js';
 import images from './images.js';
 
 const grid = document.querySelector('.poke-grid');

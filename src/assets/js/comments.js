@@ -1,8 +1,12 @@
 import { getPoke, getComments, postComments } from './api.js';
-import images from './images.js';
+import { importImages } from './functions.js';
+
+const images = importImages(require.context('../img', false, /\.(png|jpe?g|svg)$/));
+
+const getPokeId = (url) => +url.split('/').filter(Boolean).pop();
 
 const popupDetails = (poke, id) => {
-  const pokeId = +poke.url.split('/').filter(Boolean).pop();
+  const pokeId = getPokeId(poke.url);
   if (id === pokeId) {
     document.querySelector('.project-content').innerHTML = `<div class="modal-content">
             <div class="modal-header">
@@ -16,8 +20,8 @@ const popupDetails = (poke, id) => {
                 Mixed Attacker: Defense-Lowering Natures. <br>
                 Special Defense: Careful/Calm. <br>
               </p>
-              <h6>Comments()</h6>
-            //   <p>"${comments}"</p>
+              <h6>Comments <span class="commentCount" id="commentCount"></span></h6>
+              <div class="comment-section"></div>
             </div>
             <div class="mb-3">
               <input type="text" class="form-control" id="name" placeholder="Your Name">
@@ -37,24 +41,44 @@ const popupDetails = (poke, id) => {
   }
 };
 
-export const sendComments = (id) =>{
-  const name = document.getElementById('name');
-  const comment =document.getElementById('comment');
-  const commentBody =  {
-    item_id: id,
-    name: name.value,
-    comment: comment.value,
-   }
-   postComments(commentBody)
-}
+const commsCount = (comments) => (comments ? comments.length : 0);
 
-export const viewPoke = async (id) => {
-    const pokeDetails = await getPoke();
-    pokeDetails.forEach((poke) => {
-      popupDetails(poke, id);
-      const comBtn = document.getElementById('btnSubmit')
-      comBtn.addEventListener('click', sendComments(id));       
-      });
+const getCommentList = async (id) => {
+  const comments = await getComments(id);
+  const commentSection = document.querySelector('.comment-section');
+  comments.forEach((item) => {
+    const p = document.createElement('p');
+    p.innerHTML = `${item.username}: ${item.comment}`;
+    commentSection.append(p);
+  });
+  const count = commsCount(comments);
+  document.getElementById('commentCount').innerHTML = `${count}`;
+};
+
+const sendComments = (id) => {
+  const name = document.getElementById('name');
+  const comment = document.getElementById('comment');
+  const commentBody = {
+    item_id: id,
+    username: name.value,
+    comment: comment.value,
   };
- 
-export default { viewPoke };
+  postComments(commentBody);
+};
+
+const viewPoke = async (id) => {
+  const pokeDetails = await getPoke();
+  pokeDetails.forEach(async (poke) => {
+    await popupDetails(poke, id);
+    const comBtn = document.getElementById('btnSubmit');
+    comBtn.addEventListener('click', () => {
+      const pokeId = getPokeId(poke.url);
+      if (id === pokeId) {
+        sendComments(id);
+      }
+    });
+  });
+  getCommentList(id);
+};
+
+export default viewPoke;
