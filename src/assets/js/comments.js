@@ -39,7 +39,7 @@ const popupDetails = (poke, id) => {
   }
 };
 
-const commsCount = (comments) => (comments ? comments.length : 0);
+export const commsCount = (comments) => (comments ? comments.length : 0);
 
 const getCommentList = async (id) => {
   const comments = await getComments(id);
