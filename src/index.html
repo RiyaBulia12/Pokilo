@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width initial-scale=1.0">
+   <link type="image/png" sizes="16x16" rel="icon" href="../src/assets/img/favicon.png">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+   <title>Pokílö</title>
+</head>
+
+<body>
+   <div class="container-fluid">
+      <header class="header">
+         <nav class="menu-container navbar fixed-top navbar-light p-0">
+            <div class="logo d-flex ms-sm-5 ">
+               <a class="logo-text" href="#"> POKÍLÖ <span class="logo-dot">.</span>
+               </a>
+            </div>
+            <div class="p-0" id="menu-list">
+               <ul class="nav my-md-4 fs-6 text-uppercase" id="nav">
+                  <li class="nav-item px-md-5"><a href="#pokemon" class="nav-link" aria-label="Pokemon">Pokemon <span
+                           class="poke-counts" id="pokeCounts"></span>
+                     </a></li>
+                  <li class="nav-item px-md-5 "><a href="#pokemon" class="nav-link" aria-label="Pokemon">Video Games</a>
+                  </li>
+                  <li class="nav-item px-md-5"><a href="#pokemon" class="nav-link" aria-label="Pokemon">Events</a></li>
+               </ul>
+            </div>
+         </nav>
+         <section class="img-section">
+            <div class="text-container text-uppercase">
+               <div class="text-section text-uppercase">
+                  <h1 class="main-text shadowText">Pikachu <i class="bi bi-play-btn" id="play"></i></h1>
+                  <h2 class="sub-text shadowText">Pika Pika </h2>
+               </div>
+               <audio id="pikaAudio">
+                  <source src="./assets/audio/pika-audio.mp3" type="audio/mp3">
+               </audio>
+               <h6 class="h6-text shadowText">The good old memories</h6>
+            </div>
+            <img alt="banner" class="img-fluid" src="./assets/img/banner.jpg" />
+         </section>
+      </header>
+      <div class="main-content">
+         <div class="container">
+            <div class="poke-grid row gap-5 justify-content-center">
+            </div>
+            <div class="modal fade" id="projectModal">
+               <div class="modal-dialog modal-m" id="modal-dialog">
+                  <div class="modal-content" id="modal-content">
+                     <div class="project-content"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="footer">
+         <p class="m-2">Created by Recillah and Riya under the Microverse guidance</p>
+      </footer>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
