@@ -39,13 +39,11 @@ npm start
 👤 **Riya Bulia**
 
 - GitHub: [@RiyaBulia12](https://github.com/RiyaBulia12)
-- Twitter: [@Rbulia_original](https://twitter.com/@rbulia_original)
 - LinkedIn: [Riya-Bulia](https://linkedin.com/in/riya-bulia)
 
 👤 **Recilla Khamala**
 
 - GitHub: [@Rn486](https://github.com/Rn486)
-- Twitter: [@recillahk](https://twitter.com/recillahk)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/recillah-khamala-071151b7/)
 
 
