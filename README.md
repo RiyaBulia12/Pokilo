@@ -4,7 +4,7 @@
 Pokilo displays information about the Pokemons for which user can post likes and comments on each pokemon.
 
 # Live Demo
-[Live Demo](https://riyabulia12.github.io/Pokilo/dist/)
+[Live Demo](https://pokilo.netlify.app/)
 
 ## Built With
 - HTML5, CSS3, ES6, Webpack, HtmlWebpackPlugin, Jest, REST API
