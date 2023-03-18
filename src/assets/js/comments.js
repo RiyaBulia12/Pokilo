@@ -23,7 +23,7 @@ const popupDetails = (poke, id) => {
               </div>
               <div class="modal-comment">
                 <h6>Comments (<span class="commentCount" id="commentCount"></span>)</h6>
-                <div class="comment-section"></div>
+                <div class="comment-section p-3"></div>
               </div>
               </div>
               <div class="mb-3">
