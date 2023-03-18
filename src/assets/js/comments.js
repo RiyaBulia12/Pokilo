@@ -6,32 +6,36 @@ const getPokeId = (url) => +url.split('/').filter(Boolean).pop();
 const popupDetails = (poke, id) => {
   const pokeId = getPokeId(poke.url);
   if (id === pokeId) {
-    document.querySelector('.project-content').innerHTML = `<div class="modal-content">
+    document.querySelector('.pokemon-content').innerHTML = `<div class="modal-content">
             <div class="modal-header">
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-              <img src="${images[`${id}.png`]}" alt="pokemon image 1" />
-              <h5 class="modal-title">${poke.name}</h5>
-              <p> Trick Room: Brave/Quiet. <br>
-                Pivot: Relaxed/Sassy. <br>
-                Mixed Attacker: Defense-Lowering Natures. <br>
-                Special Defense: Careful/Calm. <br>
-              </p>
-              <h6>Comments <span class="commentCount" id="commentCount"></span></h6>
-              <div class="comment-section"></div>
-            </div>
-            <div class="mb-3">
-              <input type="text" class="form-control" id="name" placeholder="Your Name">
-            </div>
-            <div class="mb-3">
-              <textarea type="text" class="form-control" id="comment" placeholder="Your Insights" rows="5"></textarea>
-            </div>
-            <div class="col-auto">
-              <button type="button" id="btnSubmit" class="btn btn-primary mb-3">Submit</button>
-            </div>
-            <div class="modal-footer">
-              <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <div class="modal-body ">
+              <div class="d-flex">
+              <div class="modal-desc">
+                <img src="${images[`${id}.png`]}" alt="pokemon image 1" class="modal-img"/>
+                <h3 class="card-title text-capitalize mt-3" style="text-align: left">${poke.name}</h3>
+                <p class="skills"> Trick Room: Brave/Quiet. <br>
+                  Pivot: Relaxed/Sassy. <br>
+                  Mixed Attacker: Defense-Lowering Natures. <br>
+                  Special Defense: Careful/Calm. <br>
+                </p>
+              </div>
+              <div class="modal-comment">
+                <h6>Comments (<span class="commentCount" id="commentCount"></span>)</h6>
+                <div class="comment-section"></div>
+              </div>
+              </div>
+              <div class="mb-3">
+                  <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                  <textarea type="text" class="form-control" id="comment" placeholder="Your Insights" rows="5"></textarea>
+                </div>
+                <div class="col-auto">
+
+                  <button type="button" class="btn comment-btn text-uppercase" id="btnSubmit">Submit</button>
+                </div>
             </div>
           </div>
         </div>
@@ -46,8 +50,8 @@ const getCommentList = async (id) => {
   const commentSection = document.querySelector('.comment-section');
   commentSection.innerHTML = '';
   comments.forEach((item) => {
-    const p = document.createElement('p');
-    p.innerHTML = `${item.username}: ${item.comment}`;
+    const p = document.createElement('li');
+    p.innerHTML = `<span class="author">${item.username}</span> : ${item.comment}`;
     commentSection.append(p);
     const count = commsCount(comments);
     document.getElementById('commentCount').innerHTML = `${count}`;

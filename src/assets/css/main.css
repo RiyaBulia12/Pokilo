@@ -4,6 +4,7 @@
   --main-theme-color: #111;
   --dark-black-color: #040301;
   --yellow-color: #d8b54f;
+  --card-color: #191919;
 }
 
 * {
@@ -135,12 +136,12 @@ body {
 
 /* ------------------------ Homepage Content Begins  -------------------------- */
 .poke-card {
-  background-color: #191919;
+  background-color: var(--card-color);
 }
 
 .card {
-  background-color: #191919;
-  border-color: #191919;
+  background-color: var(--card-color);
+  border-color:var(--card-color);
   height: 100%;
 }
 
@@ -170,11 +171,51 @@ body {
   padding: 1rem;
 }
 
+.modal-img {
+  height: 100px;
+}
+
+.modal-desc {
+  margin-right: 2rem;
+  width: 44%;
+}
+
+.skills {
+  font-weight: 100;
+  text-align: left;
+}
+
+.comment-section {
+  overflow: auto;
+  background: #29292978;
+  padding: 5px;
+  margin: 15px 0;
+}
+
+.modal-comment {
+  width: 47%;
+}
+
+.form-control{
+  border-radius: 0;
+  background: transparent;
+}
+
 .comment-btn {
   color: var(--yellow-color);
   font-size: small;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+li {
+  list-style: none;
+  font-weight: 400;
+  text-align: left;
+}
+
+.author{
+  font-weight: 600;
 }
 
 .bi-heart {
@@ -186,7 +227,7 @@ body {
 }
 
 .modal-content {
-  background-color: var(--yellow-color);
+  background-color: var(--card-color);
 }
 
 .footer {

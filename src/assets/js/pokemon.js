@@ -16,7 +16,7 @@ const createGrid = (item, id, likes) => {
         <div class="card-body-custom" >
           <h3 class="card-title text-capitalize">${item.name}</h3>
           <div class="btn-container">
-            <button type="button" class="btn comment-btn text-uppercase" id="${id}" data-bs-toggle="modal" data-bs-target="#projectModal">Comment</button>
+            <button type="button" class="btn comment-btn text-uppercase" id="${id}" data-bs-toggle="modal" data-bs-target="#commentModal">Comment</button>
           </div>
         </div>
     </div>
