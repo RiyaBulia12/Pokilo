@@ -13,8 +13,10 @@ window.onscroll = () => {
 };
 
 loadPoke();
-
-audio.volume = 0.1;
+  audio.play();
+  playIcon.classList.add('bi-pause-btn');
+  playIcon.classList.remove('bi-play-btn');
+  audio.volume = 0.5;
 playIcon.addEventListener('click', () => {
   if (audio.paused) {
     audio.play();
